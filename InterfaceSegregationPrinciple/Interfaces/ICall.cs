@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace InterfaceSegregationPrinciple.Interfaces
 {
-    internal interface IEmailMessage : ISmsMessage
+    internal interface ICall
     {
-        string Subject { get; set; }
+        void Call();
     }
 }

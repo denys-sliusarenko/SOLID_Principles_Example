@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace InterfaceSegregationPrinciple.Interfaces
 {
-    internal interface IEmailMessage : ISmsMessage
+    internal interface IPhoto
     {
-        string Subject { get; set; }
+        void TakePhoto();
     }
 }

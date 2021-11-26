@@ -1,13 +1,25 @@
 ﻿using InterfaceSegregationPrinciple.Classes;
-using InterfaceSegregationPrinciple.Interfaces;
 
-IVoiceMessage voice = new VoiceMessage();
+Console.WriteLine("Example 1");
+Console.WriteLine();
+
+VoiceMessage voice = new();
 voice.Send();
 
-IEmailMessage email  = new EmailMessage();
+EmailMessage email = new();
 email.Text = "my message in email";
 email.Send();
 
-ITextMessage sms = new SmsMessage();
+SmsMessage sms = new();
 sms.Text = "my sms message";
 sms.Send();
+
+Console.WriteLine();
+Console.WriteLine("Example 2");
+Console.WriteLine();
+
+Photograph photograph = new();
+Phone lumia950 = new();
+Camera camera = new();
+photograph.TakePhoto(lumia950);
+photograph.TakePhoto(camera);

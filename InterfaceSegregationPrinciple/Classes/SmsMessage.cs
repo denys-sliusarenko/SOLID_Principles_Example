@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceSegregationPrinciple.Classes
 {
-    internal class SmsMessage : ITextMessage
+    internal class SmsMessage : ISmsMessage
     {
         public string Text { get; set; }
         public string FromAddress { get; set; }

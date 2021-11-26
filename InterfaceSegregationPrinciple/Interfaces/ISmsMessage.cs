@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace InterfaceSegregationPrinciple.Interfaces
 {
-    internal interface ITextMessage : IMessage
+    internal interface ISmsMessage : IMessage
     {
         string Text { get; set; }
     }
