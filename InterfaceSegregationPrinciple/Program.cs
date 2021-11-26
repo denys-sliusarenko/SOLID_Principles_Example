@@ -20,6 +20,12 @@ Console.WriteLine();
 
 Photograph photograph = new();
 Phone lumia950 = new();
-Camera camera = new();
+
 photograph.TakePhoto(lumia950);
+
+lumia950.BrowseInternet();
+lumia950.Call();
+lumia950.MakeVideo();
+
+Camera camera = new();
 photograph.TakePhoto(camera);
