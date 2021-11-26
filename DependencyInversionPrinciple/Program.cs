@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using DependencyInversionPrinciple.Classes;
+
+Book book = new Book(new ConsolePrinter());
+book.Print();
+book.Printer = new HtmlPrinter();
+book.Print();

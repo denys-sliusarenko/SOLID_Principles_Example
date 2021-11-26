@@ -1,5 +1,4 @@
-﻿
-using SingleResponsibilityPrinciple.Classes;
+﻿using SingleResponsibilityPrinciple.Classes;
 
 MobileStore store = new MobileStore(
     new ConsolePhoneReader(), new GeneralPhoneBinder(),
